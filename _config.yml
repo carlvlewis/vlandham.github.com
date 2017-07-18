@@ -1,13 +1,13 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-url: "http://vallandingham.me"
+url: "http://rapid-pooch.cloudvent.com"
 
 permalink:   /:title.html
 
 #base_url: http://vlandham.com
 #base_url: /
-description: ""
+description: "Testing"
 
 encoding: utf-8
 
