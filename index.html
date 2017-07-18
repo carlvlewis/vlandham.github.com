@@ -1,25 +1,34 @@
 ---
 layout: default
 title: Home
+id: posts
+twitter: true
+twitter_type: summary_large_image
+description: Visualizations by Jim Vallandingham.
+img: http://vallandingham.me/images/vis/vis_card.png
 ---
-<h2>Visualization</h2>
-<ul class="posts">
-{% for post in site.categories.vis %}
-<li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="main-body">
+  <h2>Tutorials &amp; Posts</h2>
+  <ul class="posts">
+    {% for post in site.categories.tutorial %}
+    <li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 
-<h2>Bioinformatics</h2>
-<ul class="posts">
-{% for post in site.categories.bioinfo %}
-<li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+  <h2>Visualizations</h2>
+  <ul class="posts">
+    {% for post in site.categories.vis %}
+    <li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    <li>
+      <a class="post_title" href="http://vallandingham.me/vis/">More Visualizations</a>
+    </li>
+  </ul>
 
-<h2>Other</h2>
-<ul class="posts">
-{% for post in site.categories.other %}
-<li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-
+  <h2>Talks &amp; Workshops</h2>
+  <ul class="posts">
+    {% for post in site.categories.talk %}
+    <li><a class="post_title" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
